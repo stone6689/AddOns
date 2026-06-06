@@ -14,9 +14,17 @@ This repository manages [Capybara Paradise](https://capycraft.io/) addons. Some 
 
 ---
 
-## Git Commands for Managing AddOns
+## Download AddOns
 
-### 1. Initial Setup (Cloning)
+### 1. One-time Download
+You can download the addon package directly from the GitHub releases page:
+
+https://github.com/liruqi/AddOns/releases
+
+### 2. Download/Update via Git
+If you want to manage the repository with Git, use the following commands.
+
+#### Initial Setup (Cloning)
 If you are cloning this repository for the first time, you must initialize and clone the submodules as well:
 ```bash
 git clone https://github.com/liruqi/AddOns
@@ -24,7 +32,7 @@ cd AddOns
 git submodule update --init --recursive
 ```
 
-### 2. Updating Submodules
+#### Updating Submodules
 To update all submodules to the latest commits from their respective remote repositories:
 ```bash
 git submodule update --remote --merge
@@ -38,6 +46,8 @@ git submodule update --remote --merge pfQuest
 
 ## Contributing
 
-We welcome contributions! Please feel free to create a Pull Request (PR) to contribute.
+We welcome contributions! Please feel free to create a [Pull Request](https://github.com/liruqi/AddOns/pulls) to contribute.
 
 If you would like to contribute to a specific addon, please patch that specific addon's upstream repository, or fork a new repository on your own.
+
+If profession-specific addons are needed later, we will create separate branches for each profession that has demand.
